@@ -1,0 +1,117 @@
+body{
+    margin: 0;
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+main{
+    display: flex;
+    width:600px ;
+    align-content: center;
+    justify-items: center;
+}
+picture{
+     width: 50%;
+}
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px 0px 0px 5px;
+}
+aside{
+    border-radius:0px 5px 5px 0px ;
+    padding: 15px 30px;
+    width: 50%;
+    background-color: white;
+}
+h1 {
+    color: hsl(212, 21%, 14%);
+    font-family:Fraunces;
+    font-weight: 700;
+    font-size: 36px;
+}
+h2{
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    line-height: 22px;
+}
+.price{
+    display:flex;
+    align-items: center;
+    font-family:Fraunces;
+}
+.new-price{
+color: rgba(11, 96, 11, 0.8);
+font-size: 24px;
+font-weight: 700;
+}
+.old-price{
+    text-decoration: line-through;
+    margin-left: 10%;
+    font-size: 12px;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+}
+button{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:rgba(11, 96, 11, 0.8);
+    border-radius: 5px;
+    border: 0px;
+    width:90%;
+    color: white;
+    font-family: Montserrat;
+    font-size: 18px;
+    justify-content: center;
+    gap: 10px;
+}
+footer{
+    position: absolute;
+    bottom: 10px;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+@media (max-width:375px){
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }  
+    main{
+        width: 80%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    aside{
+        width: 60%;
+        height: 60%;
+        border-radius:0px 0px 5px 5px ;
+        margin-top: -3px;
+        padding: 5% 5% ;
+    }
+    picture{
+        width: 70%;
+        height: 40%;
+        margin: 0;
+    }
+    img,source{
+        width: 100%;
+        height: 100%;
+        border-radius:5px 5px 0px 0px ;
+    }
+    h1{
+        font-size: 34px;
+    }
+    h2{
+        font-size: 15px;
+        
+    }
+}
